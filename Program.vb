@@ -1,5 +1,4 @@
 Imports System.Console
-Imports System.RegEx
 
 Module PasswordChecker
     Sub Main(args As String())
