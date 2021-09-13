@@ -74,7 +74,7 @@ Module PasswordChecker
 
         WriteLine("All checks chosen. Now commencing password check.")
 
-        If Len(password) > charactercount Then
+        If Len(password) >= charactercount Then
 
             WriteLine("Successfully passed character count check.")
 
@@ -120,10 +120,12 @@ Module PasswordChecker
 
             Else
                 WriteLine("Passwords do not match.")
+                ReadLine()
                 End
             End If
         Else
             WriteLine("Your password failed one or more checks.")
+            ReadLine()
             End
         End If
 
