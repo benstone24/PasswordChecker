@@ -116,16 +116,17 @@ Module PasswordChecker
             passwordconfirmation = ReadLine()
             If passwordconfirmation = password Then
                 WriteLine("Both passwords match and pass all enabled checks. Congratulations!")
+                System.Threading.Thread.Sleep(15000)
                 End
 
             Else
                 WriteLine("Passwords do not match.")
-                ReadLine()
+                System.Threading.Thread.Sleep(15000)
                 End
             End If
         Else
             WriteLine("Your password failed one or more checks.")
-            ReadLine()
+            System.Threading.Thread.Sleep(15000)
             End
         End If
 
